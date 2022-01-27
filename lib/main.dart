@@ -39,7 +39,7 @@ class MyApp extends StatelessWidget {
                           SizedBox(height: 84),
                           Row(
                                children: [
-                                 SizedBox(width: 98,),
+                                 SizedBox(width: 75,),
                                  Icon(Icons.supervised_user_circle_outlined, color: Colors.black),
                                  SizedBox(width: 5,),
 
@@ -68,7 +68,7 @@ class MyApp extends StatelessWidget {
                               enabledBorder: borderStyle,
                               focusedBorder: borderStyle,
                                labelText: "+7"),),),
-                          SizedBox(height: 50),
+                          SizedBox(height: 30),
                           Expanded(child: Text("Почта",
                               style: TextStyle(fontSize: 16,color: Color.fromRGBO(0, 0, 0, 0.6)) )),
                           const SizedBox(width:244, height: 34, child: TextField(
@@ -81,16 +81,17 @@ class MyApp extends StatelessWidget {
                           SizedBox(height: 40),
                           Expanded(child: Text("Вам придёт четырёхзначный код, который будет вашим паролем",
                               style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold, color: Color.fromRGBO(196, 196, 196, 1) ) )),
+                        SizedBox(height:20),
                           Expanded(child: Text("Изменить пароль можно будет в личном кабинете после регистрации",
                               style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold, color: Color.fromRGBO(196, 196, 196, 1)) )),
-                          SizedBox(height:40),
+                          SizedBox(height:30),
                           SizedBox(width:141, height: 32 , child: ElevatedButton(onPressed:() {},
                               child: Text("Отправить код"),
                               style: ElevatedButton.styleFrom(
                                 primary: Color.fromRGBO(0, 121, 208, 1),
                                     shape: RoundedRectangleBorder( borderRadius: BorderRadius.circular(36.0),),
                               ),),),
-                          SizedBox(height:120),
+                          SizedBox(height:50),
                   ],),
                     ),
                     ),);
